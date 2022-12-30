@@ -1,5 +1,4 @@
-# TresGame Whitepages - Modding custom maps for KH3 through Unreal Engine
-
+# Modding custom maps for KH3 through Unreal Engine
 
 
 ------------------------------------------------------------------------------------------------------------------------------
@@ -44,9 +43,6 @@ For AI to work, a Nav Mesh Bounds Volume needs to be added
 ## Enemies
 - Dummy files need to be used while working in-engine
 	- These are placeholders for calls and references which will be fulfilled in-game
-
-- Common spawn components
-	- See PazPak 
 
 
 ## Flowmotion
