@@ -34,16 +34,21 @@ OG Map references: [Noclip.website](https://noclip.website/)
 # TresGame Actors and Blueprints
 
 ## NPCs
-Script for spawning in party members
+
+For AI to work, a Nav Mesh Bounds Volume needs to be added.
+
+### Party members (Set Friend)
+
+Given the ["Friend manager"](#tres-get-friend-manager),
 
 TODO: insert image with example blue print
 
-For AI to work, a Nav Mesh Bounds Volume needs to be added
+### Enemies (Spawn AI From Class)
+Dummy pawns need to be used while working in-engine. These are placeholders for calls and references which will be fulfilled in-game
 
-## Enemies
-- Dummy files need to be used while working in-engine
-	- These are placeholders for calls and references which will be fulfilled in-game
+These dummy pawns should be included with the most recent built versions of TresGame.
 
+The referenced node will use these pawns to spawn the referenced AI. (See the OpenKh docuementation for pawn IDs for reference)
 
 ## Flowmotion
 Flowmotion uses actors in a straightforward manner. Most only requiring to place down a specific actor.
@@ -97,6 +102,9 @@ Toggles the "required" "red command" battles. Not dependant on the existance of 
 Non-funcitonal reaction command prompts. Select from an enum `COMMAND_KIND` to specify text displayed in prompt.
 
 It is currently unknown if custom prompts can be added.
+
+### Tres Get Friend Manager
+Get the class that manages friend NPCs. Required for changing party members.
 
 ### Cinematics
 #### Enter cinematic (Tres Start Cinematic Mode)
