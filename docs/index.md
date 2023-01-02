@@ -22,12 +22,12 @@
 
 This proccess is thoroughly documented here:
 
-https://github.com/KH3-Modding-Org/OpenKH3Modding/blob/main/uProject%20and%20Engine%20Installation.md#2-github-clone-install---update-with-the-click-of-a-button
+[Narkon Engine and TresGame Installation](https://github.com/KH3-Modding-Org/OpenKH3Modding/blob/main/uProject%20and%20Engine%20Installation.md#2-github-clone-install---update-with-the-click-of-a-button)
 
 ## Useful Resouces
-All pawn IDs are listed here: https://openkh.dev/kh3/pawns.html
+All pawn IDs are listed here: [OpenKh Documentation](https://openkh.dev/kh3/pawns.html)
 
-For importing: https://noclip.website/
+OG Map references: [Noclip.website](https://noclip.website/)
 
 ------------------------------------------------------------------------------------------------------------------------------
 
