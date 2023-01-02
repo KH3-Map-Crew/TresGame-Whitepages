@@ -39,7 +39,7 @@ For AI to work, a Nav Mesh Bounds Volume needs to be added.
 
 ### Party members (Set Friend)
 
-Given the ["Friend manager"](#tres-get-friend-manager),
+Given the ["Friend manager"](#tres-get-friend-manager) and a pawn ID (See the OpenKh docuementation) as well as the number slot, spawn a friend into the party.
 
 TODO: insert image with example blue print
 
@@ -67,54 +67,74 @@ Be mindful of nested compoment placement as some might not have zeroed relative 
 ### Rail (Tres Rail Slide actor)
 TODO: Requires more research for standardized approach. For now, try looking existing maps for reference.
 
-
-## Audio
+------------------------------------------------------------------------------------------------------------------------------
+# Audio
 
 Audio for Kingdom Hearts III uses proprietary formats. In-engine they use SQEXSEAD_ types to indicate the custom audio formats being used. This applies to both sound and music.
 
-### Custom audio
+## Custom audio
 It is possible to inject custom audio. But it isn't simple.
 A guide for this process exists here: https://docs.google.com/document/d/1sPipbu2Bm4009zENsj7x9iSbzcfpe6IdhHint2QNhew/edit
 
+------------------------------------------------------------------------------------------------------------------------------
+# MSC 
 
-## MSC 
-
-### Tres Reactor
+## Tres Reactor
 Should contain both reaction command prompt visual as well as an event that fires when prompt is pressed.
 
 TODO: Unable to get working consistantly. Requires additional research and documentation.
 
-### Save point
+## Save point
 See `/Content/Blueprints/Gimmick/ex/g_ex_SavePoint`
 
 NOTE: Cannot load save made from custom point
 
-TODO: additional research required for making saves work on custom maps. World configuration is likely required.
+TODO: Additional research required for making saves work on custom maps. World configuration is likely required.
 
-
-## Tres Game Blueprint Library
+------------------------------------------------------------------------------------------------------------------------------
+# Tres Game Blueprint Library
 A bunch of common game functionality is stored here. From battle states, to in-game cinematics.
 	
-### Tres Set Special Battle Mode
+## Tres Set Special Battle Mode
 Toggles the "required" "red command" battles. Not dependant on the existance of enemies.
 
-### Tres UI Add/Delete Action Command Mode
+## Tres Get Friend Manager
+Get the class that manages friend NPCs. Required for changing party members.
+
+## UI
+Note: Most if not all vitible text in KH3 is in the form of `TresLocText` which can be made through the `Make TresLocText` node.
+
+### Command Menu
+
+#### Tres UI Add Action Command Mode
 Non-funcitonal reaction command prompts. Select from an enum `COMMAND_KIND` to specify text displayed in prompt.
 
 It is currently unknown if custom prompts can be added.
 
-### Tres Get Friend Manager
-Get the class that manages friend NPCs. Required for changing party members.
+#### Tres UI Delete Action Command Mode
+Removes an existing reaction command prompt of the kind `COMMAND_KIND`.
+
+### Information
+
+#### Tres Open Information
+Given information text, an optional display time, and whether or not the information prompt closes automatically, display an `Information!` prompt on screen.
+
+Closes any existing information UI element before displaying the new one.
+
+#### Tres UI Close Information
+Pre-emptively closes an information UI element before it automatically closes.
 
 ### Cinematics
-#### Enter cinematic (Tres Start Cinematic Mode)
+
+#### Tres Start Cinematic Mode
 Contains numerous flags for configuring how the cinematic will behave.
 EG: Can player move? Will AI continue to act like normal or pause?
 
-#### Exit cinematic (Tres End Cinematic Mode)
+#### Tres End Cinematic Mode
 Ends the flags triggered by starting cinematic mode.
 EG: If control was taken away from the player, it will be returned.
 
+------------------------------------------------------------------------------------------------------------------------------
 ## TODOs
 - Finish basic documentation
 - Flesh out Tres Game Blueprint Library doucmentaiton (there's a lot)
