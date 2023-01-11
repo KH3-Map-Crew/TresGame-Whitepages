@@ -14,6 +14,7 @@
 	- [Miscellaneous](#msc)
 - [Tres Game Blueprint Library](#tres-game-blueprint-library)
 - [TODOs](#todos)
+- [Contributing](#contributions)
 
 
 ------------------------------------------------------------------------------------------------------------------------------
@@ -53,7 +54,7 @@ The referenced node will use these pawns to spawn the referenced AI. (See the Op
 ## Flowmotion
 Flowmotion uses actors in a straightforward manner. Most only requiring to place down a specific actor.
 
-### Parkour (Static mesh)
+### Wall running (Static mesh)
 On any actor with a static mesh component, search for `Enable Wall Run` and enable that flag. This will allow the player to run up the mesh.
 
 TODO: Other flags exist for similar properties, but require additional research and documentation.
@@ -74,7 +75,11 @@ Audio for Kingdom Hearts III uses proprietary formats. In-engine they use SQEXSE
 
 ## Custom audio
 It is possible to inject custom audio. But it isn't simple.
-A guide for this process exists here: https://docs.google.com/document/d/1sPipbu2Bm4009zENsj7x9iSbzcfpe6IdhHint2QNhew/edit
+A guide for this process exists here:
+
+[Audio replacement guide](https://docs.google.com/document/d/1ca5pJjdLSeR-W06YMHIUok0qFl6xJepmOUUkKHDwfu8/edit#)
+
+[Custom audio asset creation guide](https://docs.google.com/document/d/1sPipbu2Bm4009zENsj7x9iSbzcfpe6IdhHint2QNhew/edit)
 
 ------------------------------------------------------------------------------------------------------------------------------
 # MSC 
@@ -141,3 +146,10 @@ EG: If control was taken away from the player, it will be returned.
 - Figure out splines.
 - Figure out reactor component for visuals.
 - Add accomapnying images detailing specific pieces of functionality where noted.
+
+------------------------------------------------------------------------------------------------------------------------------
+
+## Contributing
+If you have any edits or additions you wish to make, you can see the [GitHub project](https://github.com/CpazR/TresGame-Whitepages) and make your contributions!
+
+Just be aware all changes will be vetted before being added through the pull request process.
