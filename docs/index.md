@@ -1,4 +1,9 @@
-# Modding custom maps for KH3 through Unreal Engine
+---
+title: TresGame Whitepages - Home
+filename: index.md
+---
+
+# TresGame Whitepages -  Reference documentation for modding KH3 through Unreal Engine
 
 
 ------------------------------------------------------------------------------------------------------------------------------
@@ -8,7 +13,7 @@
 - [Resources](#resources)
 - [TresGame](#tresgame)
 	- [NPCs](#npcs)
-	- [Enemies](#enemies)
+    	- [Enemies](#enemies)
 	- [Flowmotion](#flowmotion)
 	- [Audio](#audio)
 	- [Miscellaneous](#msc)
@@ -28,7 +33,10 @@ This proccess is thoroughly documented here:
 ## Useful Resouces
 All pawn IDs are listed here: [OpenKh Documentation](https://openkh.dev/kh3/pawns.html)
 
-OG Map references: [Noclip.website](https://noclip.website/)
+Old Map references: [Noclip.website](https://noclip.website/)
+
+## Map Making
+[Jack Ward](https://twitter.com/jack_m_ward) has a [useful tutorial](https://www.youtube.com/watch?v=LPzPrHoAJFs) to use as a starting point.
 
 ------------------------------------------------------------------------------------------------------------------------------
 
@@ -80,7 +88,6 @@ A guide for this process exists here:
 [Audio replacement guide](https://docs.google.com/document/d/1ca5pJjdLSeR-W06YMHIUok0qFl6xJepmOUUkKHDwfu8/edit#)
 
 [Custom audio asset creation guide](https://docs.google.com/document/d/1sPipbu2Bm4009zENsj7x9iSbzcfpe6IdhHint2QNhew/edit)
-
 
 ## General BGM functions
 Some of the referenced functions have either `optional fade` and or `all` variants.
