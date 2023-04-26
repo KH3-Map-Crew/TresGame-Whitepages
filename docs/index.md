@@ -12,6 +12,7 @@ title: TresGame Whitepages - Home
 -   [Audio](./Audio.md)
 -   [AI](./AI.md)
 -   [msc](./msc.md)
+-   [Resources](./Resources.md)
 
 # TODOs
 
