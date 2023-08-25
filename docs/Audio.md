@@ -77,6 +77,14 @@ Requires a valid reference to a `SQEXSEADBGMSLot Controller` object.
 
 The "Seek Time" value is *not* in real-time seconds, but rather in "Musical Time" units. (See "Get Musical Time" node above).
 
+### Set Section
+
+Given a BGM controller *and* an UASSET BGM file with multiple WAV music files in it (typically for horizontally dynamic music), allows selecting which WAV file will start playing.
+
+Requires a valid reference to a `SQEXSEADBGMSLot Controller` object.
+
+The "Index" input determines which WAV file is loaded in the BGM controller. The indexing is determined for each WAV file in the UASSET file's "RebuildSettings.json" as a value to the variable "SliceIndex". The 1st track usually as 0 as an index, the 2nd one has 1, and so on.	
+
 ## SQEXSEADBGMSlot Controller
 
 Maintains a BGM slot. Can be accessed through a few methods.
