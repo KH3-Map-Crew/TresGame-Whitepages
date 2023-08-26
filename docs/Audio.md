@@ -39,35 +39,35 @@ Also exists with an "Optional Fade" variant, which requires a fade duration (in 
 
 ### Resume BGM
 
-Will resume the music where it left off, with a fade in. The fade duration is set in the BGM controller's parameters.
+Will resume the music where suspended, with a fade in. The fade duration is set in the BGM controller's parameters.
 
 Also exists with an "Optional Fade" variant, which requires a fade duration (in sec.) which will override the BGM controller's.
 
 ### Get Musical Time
 
-Given a BGM controller, gets the play time of its currently BGM track. The play time's value ("Musical time") is not in seconds, and does not directly scale with real-time values.
+Given a BGM controller, gets the play time of its currently BGM track. The play time's value ("Musical time") is not in seconds, and does not directly scale with real-time values. (See "Converting between Musical Time and real-time" for an explanation.)
 
 Requires a valid reference to a `SQEXSEADBGMSLot Controller` object.
 
-#### Converting Musical Time values into real-time
+#### Converting between Musical Time and real-time
 
-Each BGM controller has a (hard-coded?) range of value for the musical time. This range is determined by the duration of the unmodded BGM track that the BGM controller calls:
-- BGM track has a loop:
-	- Musical time range = -1 to (unmodded BGM track length)/2
-- BGM track doesn't have a loop:
-	- Musical time range = 0 to (unmodded BGM track length)/2
-
-These values **don't** change even when replacing the original BGM track.
-
-The musical time values are mapped to real-time seconds as follows:
-- BGM not playing or stopped --> Musical time = -1
-- Non-looping (cutscene/event) BGM is playing --> 1 musical time unit = 2 real-time seconds
+Musical Time values seem to be mapped to real-time seconds as follows:
+- BGM not playing or stopped --> Musical Time = -1
+- Non-looping (cutscene/event) BGM is playing --> 1 Musical Time unit = 2 real-time seconds
 - Non-dynamic looped BGM (field/battle/etc.) is playing:
-    - Loop hasn't started yet --> Musical time value is scaled from -1 to 0, with 0 = loop start
-	- Loop is playing --> 1 musical time unit = 2 real-time seconds
-- Dynamic music with looped BGM ("Dive into the Heart (Destati)", "Sunshine Dancer", etc.):
-    - Loop hasn't started yet --> Musical time value is scaled from -1 to 0, with 0 = loop start
-	- Loop is playing --> 1 musical time unit = every allowed point at which the current BGM can transition into the next "musical" phase
+    - Loop hasn't started yet --> Musical Time value is scaled from -1 to 0, with 0 = loop start
+	- Loop is playing --> 1 Musical Time unit = 2 real-time seconds
+- Dynamic music BGM (eg. "Dive into the Heart (Destati)", "Sunshine Dancer", etc.):
+    - Loop hasn't started yet --> Musical Time value is scaled from -1 to 0, with 0 = loop start
+	- Loop is playing --> 1 Musical Time unit = every allowed point at which the current BGM can transition into the next musical "phase"
+	
+Each BGM controller has a (hard-coded?) range of value for the Musical Time. This range is determined by the duration of the unmodded BGM track that the BGM controller calls:
+- Unmodded BGM track has a loop:
+	- Musical Time range = -1 to (unmodded BGM track length)/2
+- Unmodded BGM track doesn't loop:
+	- Musical Time range = 0 to (unmodded BGM track length)/2
+
+The Musical Time values **don't** change, even when replacing the original BGM track. The BGM controller will still tick Musical Time values that correspond to the unmodded track. However, this doesn't prevent BGM replacements to function or to loop, but Musical Time values will be mismatched with the BGM replacement's actual timing.
 	
 ### Set Seek Time
 
