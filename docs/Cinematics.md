@@ -1,0 +1,1 @@
+# TODO: Figure out how the crap to explain installing the level sequencer plugin because it's jank as hell.

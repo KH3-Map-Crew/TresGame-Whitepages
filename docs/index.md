@@ -11,6 +11,7 @@ title: TresGame Whitepages - Home
 -   [Tres Actors and Blueprints](./TresActorsBlueprints.md)
 -   [Audio](./Audio.md)
 -   [AI](./AI.md)
+-   [Cinematics](./Cinematics.md)
 -   [msc](./msc.md)
 -   [Resources](./Resources.md)
 
