@@ -9,6 +9,7 @@ title: TresGame Whitepages - Home
 -   [Getting Started](./GettingStarted.md)
 -   [Tres Game Blueprint Library](./TresGameBlueprintLibrary.md)
 -   [Tres Actors and Blueprints](./TresActorsBlueprints.md)
+-   [Tres Level Script Actor](./TresLevelScriptActor.md)
 -   [Audio](./Audio.md)
 -   [AI](./AI.md)
 -   [Cinematics](./Cinematics.md)
