@@ -56,6 +56,9 @@ Currently, the easiet method of custom AI is using existing enemies as a base.
     -   EG: `e_exNNN_Pawn` -> `e_exNNN_myVariant_Pawn`
 -   Click `File - > Save As` and save the pawn using your new name.
 
+## Duplicating EQS
+
+
 ## Duplicating Behavior Trees
 
 Behavior trees can either be modified through an asset editor such as UAssetGUI or SOD2.
