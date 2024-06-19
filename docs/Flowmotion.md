@@ -4,7 +4,7 @@ title: TresGame Whitepages - AI
 
 # Flowmotion
 
-[Back to index](../index.md)
+[Back to index](index.md)
 
 Flowmotion uses actors in a straightforward manner. Most only requiring to place down a specific actor.
 
