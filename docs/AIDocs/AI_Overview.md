@@ -8,7 +8,7 @@ title: TresGame Whitepages - AI
 
 [Back to AI](./AI.md)
 # AI Overview
-This first part covers the basics of AI in ue4/KH3. Most of it is kh3 centric, but some parts are universal to UE. ${\color{red}I highly highly recommend you make a few blueprints before tackling AI}$, knowing basic programming logic is extremely helpful, and most likely you will end up creating blueprints to interact with your AI if you need anything new beyond what is made available by Tres. This guide assumes you understand basics such as actors vs classes, pawns, loops, components, anim notifies, and variable types such as int/float/bool/enum.
+This first part covers the basics of AI in ue4/KH3. Most of it is kh3 centric, but some parts are universal to UE. test${\color{red}I highly highly recommend you make a few blueprints before tackling AI}$, knowing basic programming logic is extremely helpful, and most likely you will end up creating blueprints to interact with your AI if you need anything new beyond what is made available by Tres. This guide assumes you understand basics such as actors vs classes, pawns, loops, components, anim notifies, and variable types such as int/float/bool/enum.
 
 * <ins>Behavior Tree (BT)</ins>: the core of AI in kh3, makes decisions top to bottom then left to right. This is how you control an AI’s decisions.  
 * <ins>Blackboard (BB)</ins>: Container for variables for AI. Variables are called blackboard keys. Each actor can have its own blackboard and own variables, but you can sync specific keys across blackboards if you’d like.  
