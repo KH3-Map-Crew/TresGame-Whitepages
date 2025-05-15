@@ -11,7 +11,7 @@ title: TresGame Whitepages - AI
 # **EQS GLOSSARY**  
 Create an environmental query by right clicking, hovering over AI, and selecting EQS. If eqs doesn’t appear, you need to enable it in the editor preferences (4.17 considered it an “experimental” feature). It should then appear. When you create one, right click anywhere on the graph to create a generator node (grey node). Right click on that generator node to create a test node (blue node).
 
-
+![eqseditor](./images/BehaviorTree/eqsEditor.png)
 
 <br/><br/>
 Contexts (*separate from the Context generator*): The type of ``items`` to test. It can be enemies, players, allies, or “items” (such as vertices). You can create Blueprint Contexts, see near the end for information. Example: Note the circle ``context``: it is centered around the context querier. You could also set it around another context. You can also use contexts that include multiple objects (such as tres\_enemies).
