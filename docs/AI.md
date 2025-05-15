@@ -23,7 +23,7 @@ _IMPORTANT_: Remember that when copying files, the file structure in your projec
 ## Game/AI
 Extensive documentation for AI-related nodes for Behavior Trees, Blueprints, and EQS
 
--   [Node Documentation](./AIDocs/AIOverview.md)
+-   [Node Documentation](AIDocs/AIOverview.md)
 
 All the contents in the following folders.
 
