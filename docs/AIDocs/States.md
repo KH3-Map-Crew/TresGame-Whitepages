@@ -4,9 +4,9 @@ title: TresGame Whitepages - AI
 
 
 
-[Back to index](docs/index.md)
+[Back to index](../index.md)
 
-[Back to AI Overview](docs/AIOverview.md)
+[Back to AI Overview](AIOverview.md)
 
 # States
 

@@ -4,9 +4,9 @@ title: TresGame Whitepages - AI
 
 
 
-[Back to index](docs/index.md)
+[Back to index](../index.md)
 
-[Back to AI Overview](docs/AIOverview.md)
+[Back to AI Overview](AIOverview.md)
 
 # **EQS GLOSSARY**  
 Create an environmental query by right clicking, hovering over AI, and selecting EQS. If eqs doesn’t appear, you need to enable it in the editor preferences (4.17 considered it an “experimental” feature). It should then appear. When you create one, right click anywhere on the graph to create a generator node (grey node). Right click on that generator node to create a test node (blue node).
@@ -24,7 +24,7 @@ Generators: Generators give a set of items to test against. After running each t
 <br/><br/>
 Tests: These are the tests used to weigh potential candidates against each other. Tests can be set to filter or score.
 
-# Generators
+## Generators
 
 * <ins>Projection Data</ins> (setting on all generators): If you use any generators that generate any points via locations, <text style="color: red">**you must set this to navigation.**</text> If you do not, it will project points that the AI cannot reach, and you definitely do not want that. *Note: You don't need it for context or actors of class*  
 * <ins>Actors of Class</ins>: Finds all of the actors of given class currently in existence. Base UE node. Context is more powerful, I would only use Actors of class for testing in engine. (This same picture from above is Actors of class: enemy pawn context). Notice how every enemy pawn is assigned weight.  
@@ -37,7 +37,7 @@ Tests: These are the tests used to weigh potential candidates against each other
 * <ins>Composite</ins>: Lets you use multiple generators in one node.This additionally lets you rank each item from every generator against each other, which solves the problem written above. I’ve never used it in game, but it’s possible if you go wild with this it might tank performance. 
 
 
-# Tests
+## Tests
 
 
 * <ins>Filter</ins>: Test setting \- filters out items based on given parameters. Example: setting distance to filter min of 300 means items will only be considered if at least 300 units away or more from the context.  
@@ -55,13 +55,11 @@ Tests: These are the tests used to weigh potential candidates against each other
   * I'm pretty sure it gets the closest distance to the querier when set to linear, but you can do the exact same thing using distance: inverse linear.
 * <ins>Return Target</ins>: checks if the enemy (or other context) is targeting the querier (they didn’t rly need this when they have targeting context)  
 
-# Blueprints
+## Blueprints
 
-Blueprint Contexts: You can create your own contexts through blueprints. While you can’t create tests directly, this does allow you to “cheat” in your own tests through standard blueprint logic and start with a generated context that fulfills your tests. You need to overwrite the single actor or multiple actors (or location/locations) function in order to use it properly. Example: This context gets all actors of class tresProjectileBase. You could extend it to only get projectiles with a team id on the enemy team.
+[EQS in Blueprints](AIBlueprints.md#eqs-blueprints)
 
-
-<br/></br>
-EQS Testing Pawn: Allows you to test in engine visually like I have been doing in the screenshots above. Unfortunately, this only lets you test the base ue tests and generators, as the gameplay debugger was stripped from tres on ship. You can still get a good idea though if you are confused. To use, create an eqs test pawn, then drop it in a level. Set the test eqs as your eqs, and you should be good to go. Simply click on the pawn in the level editor to make the bubbles appear. Change the tests or move around the pawn to redo the results.use.
+Press the link above for creating BP contexts, running eqs in a bp, creating an eqs pawn.
 
 # Specific Node Documentation
 

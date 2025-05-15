@@ -3,10 +3,9 @@ title: TresGame Whitepages - AI
 ---
 
 
+[Back to index](../index.md)
 
-[Back to index](docs/index.md)
-
-[Back to AI Overview](docs/AIOverview.md)
+[Back to AI Overview](AIOverview.md)
 
 # **Behavior Tree Guide**
 
@@ -25,7 +24,7 @@ Behavior Tree Basics:
   * ``Both``: Observes for both lower priority and self.  
 * <ins>Services</ins>: Green nodes. These also sit ontop of other nodes. They allow you to easily fill or change blackboard keys through ticks at set intervals. For example, you can run an eqs to determine the targetactor.
 
-# Composite nodes:
+## Composite nodes:
 
 * <ins>Selector</ins>: Finds the first child that succeeds. If that child succeeds, then the selector keeps running that child again. It will keep running that child until it fails. If that first child fails, it tries the next child. If that child succeeds, then it trieds the first child again, then the second. If both fail, then the selector is considered a fail, and it moves on. Generally, success means passing decorators, but you can set blueprint tasks to succeed or fail.  
 * <ins>Sequence</ins>: Runs each child in a row. If a child fails, then the sequence fails and stops at that child and does not attempt to run the rest of the child. Example: child 1 fails, child 2 is not attempted.  
@@ -34,7 +33,7 @@ Behavior Tree Basics:
   * ``Last node completes`` is what makes this composite important. “Last node completes” runs each node left to right, regardless of if any of the children fail. If child 1 and 2 fail, child 3 will still be attempted. This is called an **unconditional sequence**.  
 * <ins>Random</ins>: Chooses a child at random. You can assign the probabilities using weights. I believe the weights are ratios, so you could use .33 .33 .33 or 1 1 1 for even distribution of children ((I’m 80% sure it filters out failing children automatically, but I could be wrong)). 
 
-# Tasks:
+## Tasks:
 
 * <ins>UE nodes</ins>: You generally won’t use the ue base nodes (except for run behavior).  
 * <ins>TresTaskAction</ins>: Lets you set a state. You can also set a target actor.  
@@ -54,7 +53,7 @@ Behavior Tree Basics:
 * <ins>BlackboardObjectModifier (and other BBxModifiers)</ins>: modifies the blackboard key to what you want or need, such as setting an int key to what you need, or adding or subtracting from it.  
 * <ins>Wait</ins>: Makes the AI wait/idle for a set time (You can abort this easily as almost every state can abort idle)
 
-# Decorators:
+## Decorators:
 
 * <ins>Range check</ins>: Runs check on range between two actors, components, vectors, or combination between the two. Pass/fail based on conditions  
   * Starting point: bb key (such as selfactor)  
@@ -76,7 +75,7 @@ Behavior Tree Basics:
   * Does string \= str'?  
   * Is actor bb key valid? (key is still filled or actor in key still exists?)
 
-# Services:
+## Services:
 
 * <ins>Run EQS Query</ins>: this is generally what you will be using mostly when it comes to services. Runs an environmental query, which scans for locations or targets.  
   * EQS Query: Which eqs will you run  
@@ -90,6 +89,12 @@ Behavior Tree Basics:
   * Service Interval: How often to run this service  
 * <ins>Gameplay Focus</ins>: This makes the pawn running the BT “focus” on whichever actor bbkey you place. This purely means they pretty much look at them/turns their head towards the actor, even if running or walking sideways.
 
+
+## Custom Blueprint Nodes:
+
+[Custom BT nodes made out of Blueprints](AIBlueprints.md#behavior-tree-blueprints)
+
+Link above leads to the section explaining how to make custom behavior tree nodes (services, decorators, tasks) using blueprints.
 
 # Specific Node Documentation
 
