@@ -2,6 +2,8 @@
 title: TresGame Whitepages - AI
 ---
 
+{% docs AIdocs.headerfooter %}
+
 [Back to index](../index.md)
 
 [Back to AI Overview](AIOverview.md)
