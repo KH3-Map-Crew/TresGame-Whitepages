@@ -99,7 +99,7 @@ Behavior Tree Basics:
 
 * <ins>Range check</ins>: Runs check on range between two actors, components, vectors, or combination between the two. Pass/fail based on conditions
   ![rangecheck](./images/behaviortree/RangeCheckOverview.png)  
-  * Starting point: bb key (such as selfactor)  
+  * Source: bb key (such as selfactor)  
   * Target: bb key (such as targetactor)  
   * Use distance/source bounds: I generally leave this checked, though I am not sure what it does exactly.  
   * RangeMode: 2d, 3d, Z (up/down only)  
@@ -108,7 +108,7 @@ Behavior Tree Basics:
   * Example: This checks that the target/lockoncomp of the target is at minimum 500 units away or more. If so, proceed and use thundaga. If the lock on comp comes closer to selfactor than 500 units, abort that task/stop trying to run it.
     ![rangecheckexample](./images//BehaviorTree/RangeCheckOverview.png)  
 * <ins>Validate Action</ins>: Validates that the state can be executed before attempting to run the state. You can check “execution” (which includes ability equipped and mp for npcs), location (range set in the state), orientation (angle/rotation params set in the state).  
-  * Action: put the state here  
+  * Action Definition Override: put the state here  
   * Use blackboard definition: only if you want to use a state “class” to check from a blackboard key instead of a set state. You most likely will not ever need this
   ![valid action](./images/BehaviorTree/ValidateAction.png)  
 * <ins>Tres State check</ins>: Checks if the pawn’s state enum matches atleast one of the state enum you list. The blackboard key lets you test target actor, self actor, or any other pawn actor.  
@@ -138,8 +138,8 @@ Behavior Tree Basics:
       ![eqsedits](./images/BehaviorTree/EQSDummy.png)
 
     * Some EQS can be backwards imported from cooked into the editor. C-Paz has a guide on this. Many of them unfortunately crash the editor, however.  
-  * Blackboard Key Result: Which bb key to fill? NOTE: You must choose a key that matches the EQS. ie if its an eqs that returns an actor, use an actor key. If it returns a vector, use a vector key.  
-  * ActionEQS: Unknown, but I do not think it is used. (My only guess is that you could use bb keys to dynamically set eqs to be run, but I have never seen them actually use this).  
+  * Blackboard Key: Which bb key to fill? NOTE: You must choose a key that matches the EQS. ie if its an eqs that returns an actor, use an actor key. If it returns a vector, use a vector key.  
+  * EQS Query Bb Key: Tou could use bb keys to dynamically set eqs to be run, but I have never seen them actually use this, nor have I ever needed to use this.  
   * Invalidate Key: If the EQS fails to return anything, should the key also be cleared?  
   * Service Interval: How often to run this service  
 * <ins>Gameplay Focus</ins>: This makes the pawn running the BT “focus” on whichever actor bbkey you place. This purely means they pretty much look at them/turns their head towards the actor, even if running or walking sideways.
