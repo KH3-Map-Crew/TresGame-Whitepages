@@ -26,8 +26,8 @@ Set `target actor` example
 
 ## Behavior Tree Blueprints
 
->[!WARNING]
->When making a custom BT node, you must use ``BTService_blueprintbase`` as the parent class. Do not use the regular BTService as your parent class. This goes for task/decorators as well.
+> [!WARNING]
+> When making a custom BT node, you must use ``BTService_blueprintbase`` as the parent class. Do not use the regular BTService as your parent class. This goes for task/decorators as well.
 
 
 <ins>BTService\_BlueprintBase</ins>: This is how you make custom bt nodes using blueprints to run in your behavior tree, which allows you to execute logic and pass variables through the blackboard.Make sure when making a blueprint for a bt service you use the ``BTService_blueprintbase`` class, do not use the regular BT\_Service class (this is only for C++). You can create a blueprint service to run in a Behavior Tree.
