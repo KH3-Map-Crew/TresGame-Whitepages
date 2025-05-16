@@ -24,7 +24,7 @@ Set `target actor` example
 
 <br/><br/>
 
-## Behavior Tree Blueprints
+## Behavior Tree Blueprints - Custom BT nodes
 
 > [!WARNING]
 > When making a custom BT node, you must use ``BTService_blueprintbase`` as the parent class. Do not use the regular BTService as your parent class. This goes for task/decorators as well.
@@ -53,10 +53,12 @@ Set `target actor` example
 <br/><br/>
 <ins>BTTask\_BlueprintBase</ins>:  This is how you make custom bt nodes using blueprints to run in your behavior tree, which allows you to execute logic and pass variables through the blackboard. Make sure when making a blueprint for a bt task you use the ``BTTask_blueprintbase`` class, do not use the regular BT\_Task class (this is only for C++). You can create a blueprint task to run in a Behavior Tree. You’d usually use this to run background logic or set blackboard keys.
 
+![bttaskbp](./images/Blueprints/BTTask_BlueprintBase.png)
+
 * Use event receive and finish execute to finish it properly, you must have finish execute. This allows you to set success/fail conditions for the BT to know if the task succeeded  
 * In the example below, “ActorClass” is a public variable, allowing me to set the class from the BT to whatever I need
 
-
+![bttaskexample](./images/Blueprints/bttask.png)
 
 
 <br/><br/>
@@ -64,6 +66,9 @@ Set `target actor` example
 
 * I honestly find it extremely rare to have to make a custom decorator. Square really went wild with making a ton of C++ decorators. Thus, I have not experimented in depth with every function or how exactly aborts and flow functions work.  
 * Example below of checking if a specific ability is equipped
+
+![btdecorator](./images/Blueprints/BTDecorator.png)
+
 <br/><br/>
 
 ## EQS Blueprints
@@ -73,15 +78,17 @@ Set `target actor` example
 Blueprint Contexts: You can create your own contexts through blueprints. While you can’t create tests directly, this does allow you to “cheat” in your own tests through standard blueprint logic and start with a generated context that fulfills your tests. You need to override the single actor or multiple actors (or location/locations) function in order to use it properly. Example: This context gets all actors of class tresProjectileBase. You could extend it to only get projectiles with a team id on the enemy team.
 * Just like with custom blueprint BT nodes, make sure you use ``EnvQueryContext_BlueprintBase`` as the parent class.
 
-
+![bpcontexts](./images/EQS/bpContext.png)
 
 
 <br/><br/>
 Running an EQS inside a BP: If you want to run an eqs inside a BP for whatever reason, you may do so. You could use this to check for certain conditions in a manager, for example.
 
+![Runeqs](./images/Blueprints/RunEQS.png)
+
 
 <br/><br/>
-EQS Testing Pawn: Allows you to test in engine visually like I have been doing in the screenshots above. Unfortunately, this only lets you test the base ue tests and generators, as the gameplay debugger was stripped from tres on ship. You can still get a good idea though if you are confused. To use, create an eqs test pawn, then drop it in a level. Set the test eqs as your eqs, and you should be good to go. Simply click on the pawn in the level editor to make the bubbles appear. Change the tests or move around the pawn to redo the results.use.
+EQS Testing Pawn: Allows you to test in engine visually like I have been doing in the screenshots in the EQS. Unfortunately, this only lets you test the base ue tests and generators, as the gameplay debugger was stripped from tres on ship. You can still get a good idea though if you are confused. To use, create an eqs test pawn, then drop it in a level. Set the test eqs as your eqs, and you should be good to go. Simply click on the pawn in the level editor to make the bubbles appear. Change the tests or move around the pawn to redo the results.use.
 
 
 

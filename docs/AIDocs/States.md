@@ -18,13 +18,13 @@ States define the actions a character takes. The behavior tree tells the AI whic
 <br/><br/>
 <ins>Blueprint States</ins>: States can be custom made by creating blueprint classes off of C++ parent classes. This allows you to make any state and use it on any pawn, which makes your options limitless. For the most part, you can use the generic non-pawn listed states for any pawn. Unfortunately, you cannot directly apply pawn specific states to other pawns. For example, you cannot force a large body to run goofy tornado. The goofy tornado state is expecting the goofy pawn, and thus will not attempt to run on a large body, even if you call for it in the large body’s bt. <text style="color: red">It will either fail that BT node or softlock the ai.</text> However, you can recreate goofy tornado with a largebody using a mix of BP state and regular BPs.
 
-
+![statebp](./images/States/StateOverview.png)
 
 
 <br/><br/>
 <ins>Pre-Existing States/Dummies</ins>: If you are simply recreating/re-arranging AI from a vanilla source, you can simply create dummy states for the BT. Just follow the square name/folder path, and you can make the state out of any bp State. For locomotion states, make sure to use a locomotion state as the base class. You cannot backwards import these cooked because they are bp; you must dummy them manually or using a dummier tool.
 
-
+![states in files](./images/States/VanillaStates.png)
 
 
 <br/><br/>
@@ -40,8 +40,13 @@ States define the actions a character takes. The behavior tree tells the AI whic
 * Attack Anim Data: anim sequence  
 * Min/Max distance: what is the min max distance it can use this state from its target? Note: if you are going to use these bools, make sure to use a validate attack decorator in the Bt  
 * Npc AI Info\>attackdeftype/ability kind: for npcs, checks if they have the ability equipped, if they have enough mp, and then subtracts mp when they run this state. Note: if you are going to add an ability check, you must use a validate attack decorator in the BT  
-* Viable states: Array of state enums that allow you to transition into this state. Example: For a normal enemy melee attack, you would probably put AI move, Idle, and Turn, as these are acceptable states to abort in order to use this state. <ins>**If you leave this blank, the state might not get activated.**</ins>  
+* Viable states: Array of state enums that allow you to transition into this state. Example: For a normal enemy melee attack, you would probably put AI move, Idle, and Turn, as these are acceptable states to abort in order to use this state. <ins>**If you leave this blank, the state might not get activated.**</ins>
+
+  ![viablestats](./images/States/ViableStates.png)
+
 * MyStateID: This single enum defines what “type” of state this state you are creating is. For example, if it is an attack, you would put AI Attack (generally do not want to use Attack or Fire or other state id). 
+
+  ![mystate ID](./images/States/MyStateID.png)
 
 
 
