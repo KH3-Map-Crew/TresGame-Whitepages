@@ -17,12 +17,13 @@ Create an environmental query by right clicking, hovering over AI, and selecting
 <br/><br/>
 Contexts (*separate from the Context generator*): The type of ``items`` to test. It can be enemies, players, allies, or “items” (such as vertices). You can create Blueprint Contexts, see near the end for information. Example: Note the circle ``context``: it is centered around the context querier. You could also set it around another context. You can also use contexts that include multiple objects (such as tres\_enemies).
 
-![eqscontexts](./images/eqs/querierContext.png)
+![eqscontexts](./images/EQS/querierContext.png)
 
 <br/><br/>
 Generators: Generators give a set of items to test against. After running each test on every item, generators find the best item with the highest score and return the result. Example: Context Generator set to “enemies” with a basic distance test will return the farthest enemy.
 
-![generatorexample](./images/eqs/ActorsofClassDistanceExample.png)
+![generatorexample](./images/EQS/ActorsofClassDistanceExample.png)
+<br/>
 ![Actors of Class](./images/EQS/ActorsOfClassDistance2.png)
 
 *Note: Blue Mickey is the querier*
@@ -47,14 +48,14 @@ Tests: These are the tests used to weigh potential candidates against each other
 
 * <ins>Context</ins>: Finds all of the matching items at that point that belong to the group. Basically, it’s a “get all actors of class” type of generator, though you can use specific contexts such as enemies, specifically target, locations, specific locations, querier (self).  
   
-  ![Context Gen](./images/eqs/ContextGen.png)
+  ![Context Gen](./images/EQS/ContextGen.png)
 
     
 * <ins>OnRing/OnRing 3D</ins>: Generates rings around the context. It’s like the basic circle in base UE generator, but allows for multiple circles at once. This is generally what tres uses.  
 * <ins>Using multiple generators</ins>: You would only use multiple generators if you have a filter test. Second generator kicks in if all of the items on the first generator fail. It follows left to right. It does not evaluate their scores against each other.  
 * <ins>Composite</ins>: Lets you use multiple generators in one node.This additionally lets you rank each item from every generator against each other, which solves the problem written above. I’ve never used it in game, but it’s possible if you go wild with this it might tank performance.
 
-  ![Composite Gen](./images/eqs/compositeGen.png) 
+  ![Composite Gen](./images/EQS/compositeGen.png) 
 
 
 ## Tests
@@ -62,8 +63,8 @@ Tests: These are the tests used to weigh potential candidates against each other
 
 * <ins>Filter</ins>: Test setting \- filters out items based on given parameters. Example: setting distance to filter min of 300 means items will only be considered if at least 300 units away or more from the context.
 
-  ![filter settings](./images/eqs/DistanceTestExampleFilter.png)
-  ![Filter example](./images/eqs/DistanceTestFILTER2.png)  
+  ![filter settings](./images/EQS/DistanceTestExampleFilter.png)
+  ![Filter example](./images/EQS/DistanceTestFILTER2.png)  
     
     
 * <ins>Score</ins>: Test setting \- Scores judge the items. Each test scores each item relative to the context. The items that match the closest to the test get the highest scores. You can change the scoring to inverse, or other equations (including some equations square made that were left out of the engine), and use clamps. You can also set tests to both score and filter.
@@ -73,7 +74,7 @@ Tests: These are the tests used to weigh potential candidates against each other
 * <ins>Distance</ins>: Base UE distance. Search UE docs for more info. Example: Find point farthest away from the enemy out of points generated around mickey. ((Side note: use Z (absolute) for vertical distances, regular Z gives me weird returns.))
 
   ![distance score](./images/EQS/DistanceTestExample.png)
-  ![distance example](./images/eqs/PointsGenExample.png)  
+  ![distance example](./images/EQS/PointsGenExample.png)  
     
 * <ins>DOT</ins>: Base UE Dot product (useful for checking angles). Search UE docs for more info  
 * <ins>Targeting Test</ins>: Checks to see if context is targeting that target. It’s a range filter rather than bool because you can check how many of said context are targeting that target. For example, context generator of enemies \+ targeting test context of allies lets you test how many allies are targeting each enemy. *Great way to get the player’s yellow target icon through bp if you need\!* 
