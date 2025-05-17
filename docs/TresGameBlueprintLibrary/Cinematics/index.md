@@ -1,6 +1,13 @@
+---
+title: Cinematics
+
+parent: Blueprint Library
+
+---
+
 # Cinematics
 
-[Back to TresGameBlueprint Library Home](../index.md)
+[//]: # [Back to TresGameBlueprint Library Home](../index.md)
 
 ## Tres Start Cinematic Mode
 

@@ -1,10 +1,16 @@
 ---
-title: TresGame Whitepages - Tres Game Actors and Blueprints
+title: Tres Game Actors and Blueprints
+
+parent: Blueprint Library
+
+---
+
+
 ---
 
 # Tres Game Actors and Blueprints
 
-[Back to index](index.md)
+[//]: # [Back to index](index.md)
 
 ## NPCs
 
@@ -12,7 +18,7 @@ For AI to work, a Nav Mesh Bounds Volume needs to be added.
 
 ### Party members (Set Friend)
 
-Given the ["Friend manager"](#tres-get-friend-manager) and a pawn ID (See the OpenKh docuementation) as well as the number slot, spawn a friend into the party.
+Given the ["Friend manager"](./TresGameBlueprintLibrary/Friend%20Management/friendman.html#friend-management) and a pawn ID (See the OpenKh docuementation) as well as the number slot, spawn a friend into the party.
 
 TODO: insert image with example blue print
 

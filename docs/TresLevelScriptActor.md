@@ -1,10 +1,12 @@
 ---
-title: TresGame Whitepages - Tres Level Script Actor
+title: Tres level script
+
+parent: Maps
 ---
 
 # Tres Level Script Actor
 
-[Back to index](index.md)
+[//]: # [Back to index](index.md)
 
 ## Overview
 

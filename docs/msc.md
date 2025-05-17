@@ -1,5 +1,5 @@
 ---
-title: TresGame Whitepages - MSC
+title: MSC
 ---
 
 # MSC Pawns

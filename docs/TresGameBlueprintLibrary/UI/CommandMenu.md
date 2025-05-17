@@ -1,6 +1,13 @@
+---
+title: Command Menu
+
+parent: Tres UI - BP
+
+---
+
 # Command Menu
 
-[Back to index](index.md)
+[//]: # [Back to index](index.md)
 
 ## Tres UI Add Action Command Mode
 

@@ -1,3 +1,10 @@
+---
+title: TresLocText
+
+parent: Tres UI - BP
+
+---
+
 ## Make TresLocText
 ![Make TresLocText Node](<images/2024-01-17 19_05_56-TresGame - Unreal Editor.png>)
 

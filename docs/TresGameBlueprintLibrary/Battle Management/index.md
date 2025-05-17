@@ -1,6 +1,14 @@
+---
+title: Battle Management
+
+parent: Blueprint Library
+
+---
+
+
 # Battle Management
 
-[Back to TresGameBlueprint Library Home](../index.md)
+[//]: # [Back to TresGameBlueprint Library Home](../index.md)
 
 ## Tres Set Special Battle Mode
 

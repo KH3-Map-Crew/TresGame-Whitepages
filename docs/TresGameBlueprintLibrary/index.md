@@ -1,5 +1,5 @@
 ---
-title: TresGame Whitepages - Tres Game Blueprint Library
+title: Blueprint Library
 ---
 
 # Tres Game Blueprint Library
@@ -12,7 +12,7 @@ A bunch of common game functionality is stored here. From battle states, to in-g
 
 - ## [Cinematics](Cinematics/index.md)
 
-- ## [Friend Management](Friend%20Management/index.md)
+- ## [Friend Management](Friend%20Management/friendman.md)
 
 - ## [UI](UI/index.md)
 

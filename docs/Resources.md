@@ -1,5 +1,7 @@
 ---
-title: TresGame Whitepages - Resources
+title: Resources
+
+parent: Getting Started
 ---
 
 # Useful Resouces

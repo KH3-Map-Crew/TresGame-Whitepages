@@ -1,10 +1,12 @@
 ---
-title: TresGame Whitepages - AI
+title: Flowmotion/RailSlide
+
+parent: Maps
 ---
 
 # Flowmotion
 
-[Back to index](index.md)
+[//]: # [Back to index](index.md)
 
 Flowmotion uses actors in a straightforward manner. Most only requiring to place down a specific actor.
 
