@@ -1,5 +1,8 @@
 ---
 title: TresGame Whitepages - Home
+
+nav_order: 1
+
 ---
 
 # TresGame Whitepages - Reference documentation for modding KH3 through Unreal Engine
@@ -11,7 +14,7 @@ title: TresGame Whitepages - Home
 -   [Tres Actors and Blueprints](./TresActorsBlueprints.md)
 -   [Tres Level Script Actor](./TresLevelScriptActor.md)
 -   [Audio](./Audio.md)
--   [AI](./AI.md)
+-   [AI](./AIDocs/AIOverview.md)
 -   [Cinematics](./Cinematics.md)
 -   [Flowmotion](./Flowmotion.md)
 -   [msc](./msc.md)

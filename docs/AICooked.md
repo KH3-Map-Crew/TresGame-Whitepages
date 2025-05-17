@@ -1,18 +1,14 @@
 ---
-title: TresGame Whitepages - AI
+title: Importing Cooked AI Assets
+
+parent: AI Overview
+
+nav_order: 6
+
+
 ---
 
-# AI
-
-[Back to index](index.md)
-
-# Required tools
-
--   KHIII compatible Unreal Editor
--   Some sort of asset cooked UE viewer / editor
-    -   UAssetGUI
-    -   SOD2Editor
--   Patience...
+# AI - Importing Cooked Assets
 
 # Required assets
 
@@ -21,9 +17,6 @@ Before you can modify any NPC AI, you need to import or dummy relavent files.
 _IMPORTANT_: Remember that when copying files, the file structure in your project needs to match the structure in-game. With the only change being `game` will be `content` in your project.
 
 ## Game/AI
-Extensive documentation for AI-related nodes for Behavior Trees, Blueprints, and EQS
-
--   [Node Documentation](AIDocs/AIOverview.md)
 
 All the contents in the following folders.
 
