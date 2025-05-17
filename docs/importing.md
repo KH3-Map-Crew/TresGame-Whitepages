@@ -1,10 +1,12 @@
 ---
 title: Importing
+
+parent: Getting Started
 ---
 
 # Failed Imports
 
-[Back to index](index.md)
+[//]: # [Back to index](index.md)
 
 Often many assets fail to import into UE4. When that happends, you will need to dummy them instead.
 
