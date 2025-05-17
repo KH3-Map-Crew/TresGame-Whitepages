@@ -90,6 +90,6 @@ Tests: These are the tests used to weigh potential candidates against each other
 
 ## Blueprints
 
-[EQS in Blueprints](AIBlueprints.md#eqs%blueprints)
+[EQS in Blueprints](AIBlueprints.md#eqs-blueprints)
 
 Press the link above for creating BP contexts, running eqs in a bp, creating an eqs pawn.

@@ -17,7 +17,7 @@ nav_order: 3
 ---
 
 >[!TIP]
->Don't forget to use [observers](./BehaviorTree.md#decorator%observers)
+>Don't forget to use [observers](./BehaviorTree.html#decorator-observers)
 
 ## <ins>Range check</ins>: 
 Runs check on range between two actors, components, vectors, or combination between the two. Pass/fail based on conditions

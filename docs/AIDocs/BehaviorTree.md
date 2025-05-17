@@ -61,6 +61,6 @@ Green nodes. These also sit ontop of other nodes. They allow you to easily fill 
 
 ## Custom Behavior Tree Nodes:
 
-[Custom BT nodes made out of Blueprints](AIBlueprints.md#behavior%tree%blueprints%%%custom%bt%nodes)
+[Custom BT nodes made out of Blueprints](AIBlueprints.md#behavior-tree-blueprints---custom-bt-nodes)
 
 Link above leads to the section explaining how to make custom behavior tree nodes (services, decorators, tasks) using blueprints.
