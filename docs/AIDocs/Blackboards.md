@@ -19,7 +19,7 @@ Blackboard Keys \= variables. The blackboard keys can be floats, enums, vectors,
 
 ## Blackboard variables in Blueprints
 
-[Blackboard and Blueprints](AIBlueprints.md#Blackboard-variables-in-Blueprints)
+[Blackboard and Blueprints](AIBlueprints.md#Blackboard%variables%in%Blueprints)
 
 Press the link above for info on getting/setting blackboard keys from a blueprint.
 
