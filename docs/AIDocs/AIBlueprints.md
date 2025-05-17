@@ -69,9 +69,6 @@ Make sure when making a blueprint for a bt decorator you use the ``BTDecorator_b
 * I honestly find it extremely rare to have to make a custom decorator. Square really went wild with making a ton of C++ decorators. Thus, I have not experimented in depth with every function or how exactly aborts and flow functions work.  
 * Example below of checking if a specific ability is equipped
   ![btdecorator](./images/Blueprints/BTDecorator.png)
-
-<br/><br/>
-
 ---
 
 ## EQS Blueprints
@@ -83,13 +80,9 @@ You can create your own contexts through blueprints. While you can’t create te
 * Just like with custom blueprint BT nodes, make sure you use ``EnvQueryContext_BlueprintBase`` as the parent class.
   ![bpcontexts](./images/EQS/bpContext.png)
 
-
-<br/><br/>
 ### <ins>Running an EQS inside a BP: 
 If you want to run an eqs inside a BP for whatever reason, you may do so. You could use this to check for certain conditions in a manager, for example.
 ![Runeqs](./images/Blueprints/RunEQS.png)
 
-
-<br/><br/>
 ### <ins>EQS Testing Pawn: 
 Allows you to test in engine visually like I have been doing in the screenshots in the EQS. Unfortunately, this only lets you test the base ue tests and generators, as the gameplay debugger was stripped from tres on ship. You can still get a good idea though if you are confused. To use, create an eqs test pawn, then drop it in a level. Set the test eqs as your eqs, and you should be good to go. Simply click on the pawn in the level editor to make the bubbles appear. Change the tests or move around the pawn to redo the results.use.
