@@ -14,7 +14,7 @@ Timoram: Audio Documentation
 
 ## You!
 
-For reading and using these docs! I hope they help you make some great KH3 mods. Additionally...you should consider contributing! It is very simple and all in Markdown. 
+For reading and using these docs! I hope they help you make some great KH3 mods. Additionally...you should consider contributing! It is very simple and all in Markdown. We still need many guides - animations, modeling, more map guides, more import guides....and most of all...**many blueprint nodes**. Please contact c-paz or sabertooth222 in the openkh discord if you would like to contribute or need help setting up the repo/markdown.
 
 ## Website
 
