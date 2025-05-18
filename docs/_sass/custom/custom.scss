@@ -4,7 +4,7 @@
 
 .side-bar{
     //background-color: #c20404;
-    background-image: url("{{ '/images/sitebackground.jpg' | relative_url }}");
+    background-image: url(/docs/images/sitebackground.png);
     //position: relative;
 
     flex-direction: row-reverse;
