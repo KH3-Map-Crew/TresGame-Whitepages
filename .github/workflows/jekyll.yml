@@ -43,9 +43,12 @@ jobs:
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
-      - name: Install dependencies
-        run: bundle config set path 'vendor/bundle' && bundle install
+
+      - name: Install dependencies # need this run manually to set working directory
+        ##run: bundle config set path 'vendor/bundle' && bundle install
+        run: bundle install
         working-directory: ./docs
+
       - name: Build with Jekyll
         # Outputs to the './_site' directory by default
         run: bundle exec jekyll build --destination ../_site --baseurl "${{ steps.pages.outputs.base_path }}"
