@@ -5,6 +5,9 @@ parent: Behavior Trees
 
 nav_order: 3
 
+
+
+
 ---
 # **BT Decorators**
 {: .no_toc}
@@ -49,3 +52,5 @@ Allows you to pick a blackboard key and check against it. Observers make these p
   * Does string \= str'?  
   * Is actor bb key valid? (key is still filled or actor in key still exists?)
   ![Blackboard](./images/BehaviorTree/blackboarddecorator.png)
+
+
