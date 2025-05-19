@@ -18,7 +18,10 @@ For reading and using these docs! I hope they help you make some great KH3 mods.
 
 ## Website
 
-<a href="https://github.com/just-the-docs/just-the-docs">jekyll-gfm-admonitions</a>, a A Jekyll plugin to render GitHub-flavored admonitions 
+<a href="https://televo.github.io/kingdom-hearts-recollection/"> Kingdom Hearts Recollection</a> for the fonts and website icon.
+
+
+<a href="https://github.com/just-the-docs/just-the-docs">jekyll-gfm-admonitions</a>, a Jekyll plugin to render GitHub-flavored admonitions 
 
 This site uses <a href="https://github.com/just-the-docs/just-the-docs">Just the Docs</a>, a documentation theme for Jekyll.
 

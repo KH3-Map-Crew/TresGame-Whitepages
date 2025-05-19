@@ -31,7 +31,8 @@ h1 {
   z-index: 0;
   display: flex;
   flex-wrap: wrap;
-  background-color: #f5f6fa;
+  //background-color: #f5f6fa; light theme
+  background-color: #27262b;
   //margin-left: auto;
 
   @include mq(md) {
@@ -54,7 +55,9 @@ h1 {
     width: $nav-width-md;
     display: flex;
 
-    background: linear-gradient(to right, rgba(255,255,255,0), rgba(245, 246, 250,1));
+    //background: linear-gradient(to right, rgba(255,255,255,0), rgba(245, 246, 250,1));
+    background: linear-gradient(to right, rgba(39, 38, 43, 0), rgba(39, 38, 43, 1));
+
     
 }
 
