@@ -1,7 +1,7 @@
 ---
 title: Importing Cooked AI Assets
 
-parent: AI Overview
+parent: AI
 
 nav_order: 6
 

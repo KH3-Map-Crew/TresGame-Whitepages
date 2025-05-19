@@ -1,7 +1,7 @@
 ---
 title: EQS
 
-parent: AI Overview
+parent: AI
 
 nav_order: 4
 

@@ -1,7 +1,7 @@
 ---
 title: States
 
-parent: AI Overview
+parent: AI
 
 nav_order: 3
 

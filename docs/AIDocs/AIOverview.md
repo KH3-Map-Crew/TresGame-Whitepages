@@ -1,5 +1,5 @@
 ---
-title: AI Overview
+title: AI
 ---
 
 ## Table of Contents
@@ -16,7 +16,9 @@ title: AI Overview
     -   UAssetGUI
     -   SOD2Editor
 -   Patience
+
 # AI Node Overview
+
 >[!WARNING]
 >I highly highly recommend you make a few blueprints before tackling AI. Knowing basic programming logic is extremely helpful, and most likely you will end up creating blueprints to interact with your AI if you need anything new beyond what is made available by Tres. This guide assumes you understand basics such as actors vs classes, pawns, loops, components, anim notifies, and variable types such as int/float/bool/enum.
 

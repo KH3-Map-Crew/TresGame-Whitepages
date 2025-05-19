@@ -1,5 +1,7 @@
 ---
 title: MSC
+
+parent: Tres Game Actors and Blueprints
 ---
 
 # MSC Pawns
