@@ -4,6 +4,16 @@ title: Flowmotion/RailSlide
 parent: Maps
 ---
 
+## Table of Contents
+{: .no_toc .text-delta }
+
+1. TOC
+{:toc}
+
+
+
+
+
 # Flowmotion
 
 [//]: # [Back to index](index.md)
@@ -46,6 +56,8 @@ Example in practice:
 ![hop actor](Flowmotion/images/2024-06-19%2019_00_24-TresGame%20-%20Unreal%20Editor.png)
 
 ## Rail (Tres Rail Slide actor)
+
+You can use this [BP](https://discord.com/channels/409140906625728532/827187180480102470/1357939430022713374) made by C-Paz to pre-setup railslide splines.
 
 The most complicated setup, but still not too difficult.
 

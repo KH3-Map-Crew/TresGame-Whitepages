@@ -1,8 +1,7 @@
 ---
-title: Additional Blueprints
+title: UNUSED Additional Blueprints
 
-parent: Blueprint Library
-
+nav_exclude: true
 ---
 
 # Tres Game Blueprint Library
