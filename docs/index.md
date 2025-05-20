@@ -10,12 +10,11 @@ nav_order: 1
 # Index
 
 -   [Getting Started](./GettingStarted.md)
--   [Tres Game Blueprint Library](./TresGameBlueprintLibrary/index.md)
--   [Tres Actors and Blueprints](./TresActorsBlueprints.md)
+-   [Tres Game Blueprint Library](./TresGameBlueprintLibrary/BPOverview.md)
 -   [Tres Level Script Actor](./TresLevelScriptActor.md)
 -   [Audio](./Audio.md)
 -   [AI](./AIDocs/AIOverview.md)
--   [Cinematics](./Cinematics.md)
+-   [Cinematics](./TresGameBlueprintLibrary/Cinematics/index.md)
 -   [Flowmotion](./Flowmotion.md)
 -   [msc](./msc.md)
 -   [Resources](./Resources.md)
