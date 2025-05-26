@@ -1,18 +1,14 @@
 ---
-title: TresGame Whitepages - AI
+title: Importing Cooked AI Assets
+
+parent: AI
+
+nav_order: 6
+
+
 ---
 
-# AI
-
-[Back to index](index.md)
-
-# Required tools
-
--   KHIII compatible Unreal Editor
--   Some sort of asset cooked UE viewer / editor
-    -   UAssetGUI
-    -   SOD2Editor
--   Patience...
+# AI - Importing Cooked Assets
 
 # Required assets
 

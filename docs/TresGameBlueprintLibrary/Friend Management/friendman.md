@@ -1,6 +1,14 @@
+---
+title: Friend Manager
+
+parent: Blueprint Library
+
+---
+
 # Friend Management
 
-[Back to TresGameBlueprint Library Home](../index.md)
+
+[//]: # [Back to TresGameBlueprint Library Home](../index.md)
 
 ## Tres Get Friend Manager
 

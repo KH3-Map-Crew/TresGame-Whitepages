@@ -1,10 +1,23 @@
 ---
-title: TresGame Whitepages - Audio
+title: Audio
 ---
 
-# Audio
+# AUDIO
+{: .no_toc }
 
-[Back to index](index.md)
+
+
+## Table of Contents
+{: .no_toc .text-delta }
+
+1. TOC
+{:toc}
+
+
+
+## Audio Overview
+
+[//]: # [Back to index](index.md)
 
 Audio for Kingdom Hearts III uses proprietary formats. In-engine they use SQEXSEAD\_ types to indicate the custom audio formats being used. This applies to both sound and music.
 

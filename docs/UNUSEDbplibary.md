@@ -1,10 +1,12 @@
 ---
-title: TresGame Whitepages - Tres Game Blueprint Library
+title: UNUSED Additional Blueprints
+
+nav_exclude: true
 ---
 
 # Tres Game Blueprint Library
 
-[Back to index](index.md)
+[//]: # [Back to index](index.md)
 
 A bunch of common game functionality is stored here. From battle states, to in-game cinematics.
 

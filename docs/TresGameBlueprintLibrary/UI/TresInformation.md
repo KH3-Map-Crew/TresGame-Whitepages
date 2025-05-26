@@ -1,7 +1,12 @@
+---
+title: Tres Information
 
+parent: Tres UI - BP
+
+---
 # Tres Information
 
-[Back to index](index.md)
+[//]: # [Back to index](index.md)
 
 ## Tres Open Information
 ![Tres Open Information Node](<images/2024-01-17 19_05_33-TresGame - Unreal Editor.png>)
