@@ -39,7 +39,10 @@ KH3 uses a hybrid state/Behavior Tree system. States are set for each character,
 
 ## [<ins>Blueprints</ins>](AIBlueprints.md): 
 There are a few ways to interact with AI using functions and nodes through blueprints. See blueprint nodes for more information.  
-* [<ins>Environmental Query System (EQS)</ins>](EQS.md): UE system to scan the environment for the best potential result. Each query can be setup to weigh potential candidates against each other using tests. For a very simple example, you want an enemy to scan actors to find the player to set as its target. KH3 uses this. Then, you want it to scan the environment for suitable locations to run around to while waiting to attack. EQS passes the best result after those tests and places it in a blackboard key of your choosing. (You can also run an EQS through a bp if you need)
+
+
+## [<ins>Environmental Query System (EQS)</ins>](EQS.md): 
+UE system to scan the environment for the best potential result. Each query can be setup to weigh potential candidates against each other using tests. For a very simple example, you want an enemy to scan actors to find the player to set as its target. KH3 uses this. Then, you want it to scan the environment for suitable locations to run around to while waiting to attack. EQS passes the best result after those tests and places it in a blackboard key of your choosing. (You can also run an EQS through a bp if you need)
     ![Ai overview eqs](./images/EQSExample.png)  
 
 ## Additional AI Systems
